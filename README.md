@@ -2,9 +2,9 @@
 
 **Setup**
 
-.Download the Folder
-.Recommended to change the Jquery CDN to the latest version in Index.html file
-.To add music, just make couple of more li tags and specify the Mp3 link and the cover Image link.
+* Download the Folder
+* Recommended to change the Jquery CDN to the latest version in Index.html file
+* To add music, just make couple of more li tags and specify the Mp3 link and the cover Image link.
 
 ---
 
