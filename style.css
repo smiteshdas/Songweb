@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('css/searchicon.png');
+  background-position: 10px 5px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+#playlist {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  
+}
+
+#playlist li a {
+  font-family: 'Poppins', sans-serif;
+
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  /*background-color: #f6f6f6;*/
+  padding: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block
+
+}
+
+#playlist li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  font-family: 'Noto Sans', sans-serif;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #353535;/*#111*/
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #000;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#eee;
+   text-align: center;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <center>
+  <a href="#">Trending</a>
+  <a href="#">Suggest Song</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</center>
+</div>
+
+<span style="font-size:30px;cursor:pointer; float:right; color:#4A4A4A;" onclick="openNav()">&#9776;</span><!--#353535-->
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<p style=" font-size:25px; color:#BBBBBB ; font-family:'Poppins', sans-serif;">Mehfil</p><!--#E5E5E5  #CFCFCF-->
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Songs,Artists,Singers,Musicians,Actors" title="Type in a name">
+
+
+
+<ul id="playlist">
+        <li class="current-song"><a href="music/Kalimba.mp3"><img src="css/j.png" height="30px" width="30px"> Chookar Mere Man Ko |Kishore Kumar</a></li>
+      <li><a href="music/Maid with the Flaxen Hair.mp3"><img src="css/k.png" height="30px" width="30px"> Mere Meheboob Qayamat Hogi| Kishore Kumar</a></li>
+        <li><a href="music/Sleep Away.mp3"><img src="css/l.png" height="30px" width="30px"> Kabhie Kabhie Mere Dil Main | Mukesh | Amitabh Bachchan</a></li>
+
+</ul>
+
+<div class="footer">
+  <audio src="" controls id="audioPlayer" >
+        Sorry, your browser doesn't support html5!
+    </audio>
+</div>
+
+
+<!--<script src="j/jquery-3.4.1.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+        // loads the audio player
+        audioPlayer();
+    </script>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("playlist");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
+
