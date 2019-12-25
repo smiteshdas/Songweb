@@ -12,7 +12,7 @@
 
 **Smitesh Das**
 
-DONATE HIM ON [SKRILL](https://www.skrill.com)  ON [instaproasmith.com](instaproasmith.com)
+DONATE HIM ON [SKRILL](https://www.skrill.com)  ON [instproasmith@gmail.com](instproasmith@gmail.com)
 
 ---
 
